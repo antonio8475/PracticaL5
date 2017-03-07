@@ -23,10 +23,10 @@ class AddTagsTable extends Migration
         //Relacion de Muchos a Muchos, se crea una tabla pivote con sus respectivas relaciones foraneas
         schema::create('article_tag', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('article_id')->unsigned();
+            $table->integer('articles_id')->unsigned();
             $table->integer('tag_id')->unsigned();
 
-            $table->foreign('article_id')->references('id')->on('articles');
+            $table->foreign('articles_id')->references('id')->on('articles');
             $table->foreign('tag_id')->references('id')->on('tags');
 
             $table->timestamps();
