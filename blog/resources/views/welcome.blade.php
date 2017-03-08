@@ -18,6 +18,7 @@
 @endsection
 
 @section('footer')
-<hr size="10" />
+<hr size="10" color="black" />
+
 <h6>CopyRight 2017 - Antonio Mendoza - Hispano soluciones, C.A. | Practica de PHP Laravel 5</h6>
 @endsection
